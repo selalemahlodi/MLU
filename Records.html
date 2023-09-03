@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+     
+	 <head>
+	    <link rel="stylesheet" href="colors.css">
+		<header>
+		
+		  <h1>Medical Records</h1>
+		  
+		</header>
+      </head>
+		
+		
+		<body>
+		
+	<div class="container">
+	
+    <h3>3 Months</h3>
+    
+    <p>Click here to download medical history:</p>
+
+    <!-- Button to trigger the download -->
+    <a href="sample-file.txt" download="sample-file.txt">
+        <button style="width:30%">Download File</button>
+    </a>
+
+    <p id="download-status"></p>
+
+    <script>
+        // Function to display download status
+        function displayDownloadStatus() {
+            document.getElementById("download-status").textContent = "File is downloading...";
+        }
+
+        // Event listener for when the download starts
+        document.querySelector("a").addEventListener("click", displayDownloadStatus);
+    </script>
+	
+	<h3>6 Months</h3>
+
+    <p>Click here to download medical history:</p>
+
+    <!-- Button to trigger the download -->
+    <a href="sample-file.txt" download="sample-file.txt">
+        <button style="width:30%">Download File</button>
+    </a>
+
+    <p id="download-status"></p>
+
+    <script>
+        // Function to display download status
+        function displayDownloadStatus() {
+            document.getElementById("download-status").textContent = "File is downloading...";
+        }
+
+        // Event listener for when the download starts
+        document.querySelector("a").addEventListener("click", displayDownloadStatus);
+    </script>
+	
+	<h3>12 Months</h3>
+
+    <p>Click here to download medical history:</p>
+
+    <!-- Button to trigger the download -->
+    <a href="sample-file.txt" download="sample-file.txt">
+        <button style="width:30%">Download File</button>
+    </a>
+
+    <p id="download-status"></p>
+
+    <script>
+        // Function to display download status
+        function displayDownloadStatus() {
+            document.getElementById("download-status").textContent = "File is downloading...";
+        }
+
+        // Event listener for when the download starts
+        document.querySelector("a").addEventListener("click", displayDownloadStatus);
+    </script>
+	
+	<br><br><button style="width:10%; background-color: gray;">Done</button>
+	</div>
+</body>
+</html>

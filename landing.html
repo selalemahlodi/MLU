@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #header{
+            width: 100%;
+            min-height: 60px;
+            background: black;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #header a{
+            line-height: 60px;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            &:hover{
+                color: black;
+                background: gray;
+                transform: scale(1.1);
+            }
+        }
+        
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        body{
+            background: url(icon2.jpg) no-repeat;
+            background-position: center !important;
+            background-size: cover !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div><a href="index.html">Menu</a></div>
+        <div><a href="regista.html">Create account</a></div>
+        <div><a href="Patient.html">Show data</a></div>
+        <div><a href="Records.html">Download file</a></div>
+    </div>
+    <div id="home" >
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediLineUp EHR System</title>
+    <style>
+        /* Reset some default styles to ensure consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+/* Style for the source text */
+.source-text {
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.circular-border {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid black; /* Border color */
+            overflow: hidden;
+            margin: 0 auto; /* Center the circle */
+        }
+
+        /* Styling for uploaded image */
+        .circular-border img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+input[type="submit"]:hover {
+    background-color: #0056
+
+    </style>
+</head>
+<body>
+    <h1>Welcome, Patient</h1>
+
+    <!-- Source text -->
+    <div class="source-text">
+        <input type="file" id="imageInput" accept="image/*">
+		
+		<div class="circular-border">
+        <img id="uploadedImage" alt="">
+		<input type="file" id="imageInput" accept="image/*">
+    </div>
+        <p>
+            <br><br>MediLineUp is an Electronic Health Record System (EHRs) and health care management database for patient details/profiles in South Africa. Its aim is to provide the safety of patients' files and medical records. The central focus of our software is to record patients' files via the cloud, especially in the era of the Fourth Industrial Revolution (4IR). This approach ensures the safety of data during natural disasters, relocating to new locations, and makes it easier for both administration and doctors to locate and access patient details.
+        </p>
+        <div style="clear: both;"></div>
+    </div>
+
+    <!-- Form for capturing patient information -->
+    <br><br><h2>Patient Information</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="regNo">Registration Number (Reg NO):</label>
+        <input type="text" id="regNo" name="regNo" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="regDate">Registration Date:</label>
+        <input type="date" id="regDate" name="regDate" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

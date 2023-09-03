@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #header{
+            width: 100%;
+            min-height: 60px;
+            background: black;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #header a{
+            line-height: 60px;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            &:hover{
+                color: black;
+                background: gray;
+                transform: scale(1.1);
+            }
+        }
+        #sign{
+            text-align: center;
+            width: 100%;
+            min-height: 88vh;
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div><a href="index.html">Home</a></div>
+    </div>
+
+    <div id="sign"><br>
+        <div id="box"><br><br>
+            <h3>Sign up</h3>
+            <form action="sign" method="post"><br><br>
+                <div>
+                    <label for="">Name</label>
+                    <input type="text" name="name">
+                </div><br>
+                <div>
+                    <label for="">Surname</label>
+                    <input type="text" name="Surname">
+                </div><br>
+                <div>
+                    <label for="">Gender</label>
+                    <input type="text" name="gender">
+                </div><br>
+                <div>
+                    <label for="">ID NO</label>
+                    <input type="text" name="idno">
+                </div><br>
+                <div>
+                    <label for="">Password</label>
+                    <input type="password" name="passwd">
+                </div><br>
+                <div>
+                    <label for="">Address</label>
+                    <input type="text" name="address">
+                </div><br>
+                <div>
+                    <label for="">Number</label>
+                    <input type="tel" name="number">
+                </div><br>
+
+                
+                
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" name="email">                    
+                </div><br>
+                <div>
+                    <label for="">Tasks member</label>
+                    <input type="checkbox" name="member"> 
+                </div><br><br>
+
+                <div>
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </div><br>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
